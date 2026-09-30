@@ -23,6 +23,14 @@ The recurring problem is not simply "add AI." It is:
 
 > **How do you make many capabilities operate as one coherent system without making the human become the integration layer?**
 
+## Current focus: Legal AI & governed professional workflows
+
+I am currently applying this architecture work to **legal technology and legal AI**: evidence-grounded matter systems, legal-operations workflow automation, AI governance, professional handoffs, source provenance, structured approvals, and verified execution.
+
+For a recruiter-facing map of this work, see **[Legal Technology Positioning](docs/LEGAL_TECH_POSITIONING.md)**.
+
+This maps particularly well to roles such as **Legal Technology Solutions Architect, Applied AI / Implementation Architect, Legal AI Enablement, Legal Operations Technology, and AI Governance for Legal & Compliance**.
+
 ## Selected architecture
 
 | System | Architectural problem | Public case study |
