@@ -34,6 +34,15 @@ The recurring problem is not simply "add AI." It is:
 | **SOPHIA** | Authority, jurisdiction, delegation, appeal, revocation, and accountability for agentic systems | [View](case-studies/sophia.md) |
 | **Vizion** | Source-backed procedural guidance from intent through execution, verification, and receipt | [View](case-studies/vizion.md) |
 
+## Legal tech focus
+
+A current focus is **legal AI and legal-operations architecture**: evidence provenance, matter intelligence, adversarial analysis, human-in-the-loop legal workflows, counsel continuity, consumer protection, and auditable decision/execution systems.
+
+- [Legal Tech Architecture — From Evidence to Governed Resolution](case-studies/legal-tech-architecture.md)
+- [Legal Tech Recruiter Signal Map](docs/LEGAL_TECH_ROLE_MAP.md)
+
+This work maps most directly to solutions engineering, implementation consulting, legal-tech product/innovation, AI governance, workflow automation, and technical customer-success roles.
+
 ## Architecture principles
 
 ### Capability is not authority
