@@ -1,89 +1,120 @@
-# Lalo Pacheco Sánchez — AI Systems Architecture
+# Lalo Pacheco Sánchez — AI Systems & Solutions Architecture
 
-**AI systems architecture · enablement · orchestration · governed automation · human-centered operating systems**
+**Governed AI implementation · workflow orchestration · systems integration · human-approved execution**
 
-I build systems that turn fragmented AI capabilities, software, data, workflows, and human decisions into coherent operating environments.
+I design operating systems for AI-enabled work: the architecture connecting people, software, data, models, permissions, workflows, and evidence so that AI can be useful without becoming unaccountable.
 
-This repository is the public architecture layer for that work. It documents selected systems, patterns, and design decisions from a larger private implementation portfolio while deliberately separating **proof of capability** from **reusable proprietary machinery**.
+This repository is a recruiter- and collaborator-facing portfolio. It presents sanitized architecture and case studies from a larger private implementation body while preserving the proprietary machinery behind it.
 
-## What I work on
+## 60-second portfolio tour
 
-My work sits at the intersection of:
+1. **Run the technical proof:** [Governed AI Control Plane](https://github.com/lpssovereign/lps_control_plane)  
+   Python implementation of policy-gated execution, approval states, audit records, replay, delegation, tests, and CI.
 
-- AI enablement and workflow transformation
-- agent and service orchestration
-- APIs, OAuth, integrations, and event-driven systems
-- persistent state, provenance, evidence, and auditability
-- human-in-the-loop authority and approval boundaries
-- operational UX and attention management
-- domain-specific AI runtimes
-- full-stack product architecture
+2. **See legal-tech reasoning:** [PhiNeX](case-studies/phinex.md)  
+   Governed evidence-to-resolution architecture for sensitive records, claims, provenance, review, and consequential actions.
 
-The recurring problem is not simply "add AI." It is:
+3. **See customer implementation thinking:** [Legal AI Implementation Walkthrough](docs/LEGAL_AI_IMPLEMENTATION_WALKTHROUGH.md)  
+   A vendor-neutral blueprint for moving a law office from workflow discovery through configuration, validation, adoption, and measurable operations.
 
-> **How do you make many capabilities operate as one coherent system without making the human become the integration layer?**
+4. **See guided learning and edtech relevance:** [Vizion](case-studies/vizion.md)  
+   Source-backed, stateful procedural guidance with uncertainty, safety gates, verification, accessibility, and recovery.
 
-## Selected architecture
+## Professional focus
 
-| System | Architectural problem | Public case study |
+I am best aligned with roles involving:
+
+- AI solutions engineering and customer implementation
+- legal-tech, edtech, and other high-accountability domains
+- workflow discovery, requirements translation, and systems mapping
+- APIs, OAuth, webhooks, data movement, and integration design
+- human-in-the-loop authority, governance, provenance, and auditability
+- technical demonstrations, implementation plans, enablement, and adoption
+- operational UX: making complex systems understandable and usable
+
+The recurring question across the work is:
+
+> How do we turn fragmented AI capabilities into reliable organizational capability without making the human become the integration layer?
+
+## Evidence map
+
+| Evidence | What it demonstrates | Maturity |
 |---|---|---|
-| **Kairos** | Relationship, communication, timing, follow-up, and person-specific next action | [View](case-studies/kairos.md) |
-| **PhiNeX** | Evidence-to-resolution infrastructure with governance, provenance, and human approval | [View](case-studies/phinex.md) |
-| **Marathon** | Work reconciliation across tasks, agents, approvals, documents, and partial execution | [View](case-studies/marathon.md) |
-| **SynaptiQ** | Bounded human-pattern and domain intelligence runtimes without collapsing everything into one agent | [View](case-studies/synaptiq.md) |
-| **SOPHIA** | Authority, jurisdiction, delegation, appeal, revocation, and accountability for agentic systems | [View](case-studies/sophia.md) |
-| **Vizion** | Source-backed procedural guidance from intent through execution, verification, and receipt | [View](case-studies/vizion.md) |
+| [Governed AI Control Plane](https://github.com/lpssovereign/lps_control_plane) | Python, state machines, policy enforcement, audit trails, tests, CI | **Tested reference implementation** |
+| [PhiNeX](case-studies/phinex.md) | Legal evidence architecture, data boundaries, human approval, provenance | **Private implementation; sanitized public architecture** |
+| [Marathon](case-studies/marathon.md) | Work reconciliation across tasks, documents, agents, approvals, and partial execution | **Private implementation; sanitized public architecture** |
+| [Kairos](case-studies/kairos.md) | Relationship-aware communication, timing, context, and next actions | **Private implementation; sanitized public architecture** |
+| [Vizion](case-studies/vizion.md) | Source-backed procedures, accessible guidance, verification, and recovery | **Specified; incremental implementation** |
+| [SOPHIA](case-studies/sophia.md) | Delegation, jurisdiction, revocation, appeal, and agent accountability | **Architecture and governance model** |
+| [SynaptiQ](case-studies/synaptiq.md) | Bounded domain intelligence and human-pattern systems | **Architecture and partial implementation** |
 
-## Architecture principles
+Maturity labels describe the underlying work; they are not claims of client deployment, external certification, or production security review.
+
+## Core architecture pattern
+
+```mermaid
+flowchart TD
+    I[Business intent] --> C[Context + state]
+    C --> B[Bounded AI capability]
+    B --> G{Authority + policy}
+    G -->|reversible| E[Execute]
+    G -->|consequential| H[Human approval]
+    H --> E
+    E --> V[Verify result]
+    V --> R[Preserve receipt]
+    R --> U[Update operational state]
+```
+
+## Design principles
 
 ### Capability is not authority
 A model or agent being able to perform an action does not mean it is authorized to perform it.
 
 ### Intelligence should be bounded
-Different domains retain distinct responsibilities, data boundaries, and execution semantics rather than being collapsed into one omnipotent agent.
+Domains retain distinct responsibilities, data boundaries, and execution semantics instead of collapsing into one omnipotent agent.
 
 ### Humans should not be APIs
-Systems should carry state and coordinate services directly. Human attention is reserved for judgment, authorization, relationships, and genuinely consequential decisions.
+Systems should carry state and coordinate services directly. Human attention should be reserved for judgment, authorization, relationships, and consequential decisions.
 
 ### Consequential actions need receipts
 Important execution should be source-linked, permission-aware, observable, verifiable, and reconstructable.
 
-### Complexity needs geometry
-The underlying system can become sophisticated without requiring the human attention surface to become equally complicated.
+### Complexity needs an understandable surface
+A sophisticated system should still give operators a clear view of what happened, what needs attention, and what remains blocked.
 
-## A recurring execution pattern
+## From discovery to adoption
+
+My solutions-engineering approach follows a practical sequence:
 
 ```mermaid
 flowchart LR
-    I[Intent] --> C[Context + State]
-    C --> R[Bounded Intelligence]
-    R --> G{Authority / Policy Gate}
-    G -->|Reversible| X[Execute]
-    G -->|Needs approval| H[Human Decision]
-    H --> X
-    X --> V[Verify]
-    V --> P[Preserve Receipt]
-    P --> S[Update State]
+    D[Discover] --> M[Map]
+    M --> C[Configure]
+    C --> V[Validate]
+    V --> A[Adopt]
+    A --> O[Observe]
 ```
 
-This pattern appears in different forms across the portfolio: legal/evidence operations, relationship intelligence, work reconciliation, procedural guidance, household operations, governance, and AI-assisted development.
+- **Discover:** goals, users, constraints, risks, and current tools
+- **Map:** workflows, data, permissions, decisions, and failure paths
+- **Configure:** integrations, roles, policies, prompts, and handoffs
+- **Validate:** test cases, edge cases, human approvals, and acceptance criteria
+- **Adopt:** training, documentation, rollout, and change support
+- **Observe:** usage, exceptions, quality, business outcomes, and iteration
 
-## Portfolio boundary
+See the [Legal AI Implementation Walkthrough](docs/LEGAL_AI_IMPLEMENTATION_WALKTHROUGH.md) for a concrete example.
 
-This repository intentionally publishes architecture, sanitized flows, design rationale, selected screenshots, case studies, and non-proprietary implementation patterns.
+## Public/private boundary
 
-It does **not** publish production credentials, customer/private data, proprietary orchestration machinery, reusable internal workflow libraries, private prompts/instructions, production adapters, deployment secrets, or material that would expose protected implementation IP.
+This portfolio publishes architecture, sanitized flows, design rationale, selected non-proprietary patterns, and bounded case studies. It does not publish credentials, private/customer data, production infrastructure, proprietary orchestration logic, reusable internal workflow libraries, private instructions, or deployment secrets.
 
 See [Public Portfolio Boundary](docs/PUBLIC_PORTFOLIO_BOUNDARY.md).
 
-## Current status
-
-This public dossier is being built from working private repositories. Case studies distinguish between implemented capability, documented architecture, partial implementation, and future direction rather than presenting roadmap material as shipped software.
-
 ## About
 
-**Lalo Pacheco Sánchez**
+**Lalo Pacheco Sánchez**  
+Denver, Colorado · Open to remote AI solutions, implementation, enablement, and systems roles
 
-I came to AI systems work by building operating environments rather than isolated demos: connecting interfaces, state, APIs, automation, governance, evidence, and domain-specific intelligence until the pieces could function together.
+My background combines technical system-building with client-facing financial services, operations, education, and community leadership. That combination shapes how I work: understand the actual human process, translate it into an implementable system, establish authority and evidence boundaries, and help people adopt what was built.
 
-The result is a portfolio centered on a practical question: **how do we turn AI capability into reliable organizational capability?**
+**GitHub:** [github.com/lpssovereign](https://github.com/lpssovereign)
